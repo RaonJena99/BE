@@ -4,9 +4,9 @@ import os
 import httpx
 from fastapi import APIRouter, HTTPException, Request
 
-from schemas.captcha import CaptchaRequest, CaptchaResponse
-from utils.id_gen import generate_captcha_id
-from utils.image_processing import decode_image
+from src.schemas.captcha import CaptchaRequest, CaptchaResponse
+from src.utils.id_gen import generate_captcha_id
+from src.utils.image_processing import decode_image
 
 router = APIRouter()
 
